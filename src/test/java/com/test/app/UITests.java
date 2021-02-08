@@ -59,7 +59,7 @@ public class UITests {
     ///////////////////////////////////
     @Test
     @DisplayName("Send a form with blank First and Last Names")
-    @Description("Проверка на то, First Name и Last Name могут быть пустыми")
+    @Description("Проверка на то, First Name и Last Name не могут быть пустыми")
     public void emptyNamesTest() {
         Random r = new Random();
         int randomInt = r.nextInt();
@@ -69,7 +69,7 @@ public class UITests {
         testForm.enterEmail(randomInt + "test@testmail.com");
         testForm.enterPhoneNumber("12345678");
         testForm.clickSubmitButton();
-        testForm.verifyThatAlertIsNotDisplayed();
+        testForm.verifyThatAlertIsDisplayed();
     }
 
     @Test

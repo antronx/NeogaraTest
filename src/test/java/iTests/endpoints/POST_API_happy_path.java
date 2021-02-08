@@ -49,12 +49,12 @@ public class POST_API_happy_path {
         POST_API_happy_path click = new POST_API_happy_path();
         JSONObject requestParams = new JSONObject();
         requestParams.put("pid", "lalw70");
-        requestParams.put("pipeline", 20);
+        requestParams.put("pipeline", 2);
         requestParams.put("firstname", "TestFirstName");
         requestParams.put("lastname", "TestLastName");
         requestParams.put("phone", "12345678");
         requestParams.put("email", "lid@gmail.com");
-        requestParams.put("ref", "file:///C:/Users/akaia/Documents/4%20new%20work/Appside/test.html");
+        requestParams.put("ref", "file:///" + System.getProperty("user.dir") + "\\src\\main\\java\\com\\test\\app\\test.html");
         requestParams.put("ip", "172.122.31.13");
         requestParams.put("city", "Kyiv");
         requestParams.put("country", "UA");
